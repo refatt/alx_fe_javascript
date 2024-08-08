@@ -54,7 +54,11 @@ async function syncQuotes() {
     notifyUser(`New quotes from the server have been added.`);
     filterQuotes();
   }
+
+  // Notify the user that quotes have been synced with the server
+  alert("Quotes synced with server!");
 }
+
 
 // Function to start periodic syncing
 function startPeriodicSync() {
