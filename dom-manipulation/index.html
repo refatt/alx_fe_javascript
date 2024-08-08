@@ -8,6 +8,12 @@
 <body>
   <h1>Dynamic Quote Generator</h1>
   
+  <!-- Category filter dropdown -->
+  <select id="categoryFilter" onchange="filterQuotes()">
+    <option value="all">All Categories</option>
+    <!-- Categories will be populated dynamically -->
+  </select>
+
   <!-- Display area for the quotes -->
   <div id="quoteDisplay"></div>
   
@@ -15,11 +21,7 @@
   <button id="newQuote">Show New Quote</button>
   
   <!-- Form to add a new quote -->
-  <div>
-    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
-    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
-    <button onclick="addQuote()">Add Quote</button>
-  </div>
+  <div id="addQuoteFormContainer"></div>
 
   <!-- JavaScript file -->
   <script src="script.js"></script>
